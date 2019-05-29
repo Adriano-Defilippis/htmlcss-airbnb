@@ -7,16 +7,24 @@
 
 /* Assegno il Css per adeguare il Blocco alla viewPort. e img */
 #container{
+  position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url("roma.jpg");
-  background-size: cover;
 
 }
+
+/* stilizzo il tag img contenuto nel #container */
+#container img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: inline;
+  }
 
 /* Css per creare un filtro opaco al contenuto */
 #layOver{
   /* width e height prendono il 100% del box dove sono contenuti */
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(5,5,5,0.5);
@@ -27,4 +35,12 @@
   font-size: 82px;
   color: white;
   text-shadow: 5px 5px #000;
+}
+
+/* posiziono al centro il titolo */
+.cityName{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
