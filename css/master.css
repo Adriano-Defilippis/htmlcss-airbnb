@@ -3,3 +3,12 @@
   margin: 0;
   padding: 0;
 }
+
+/* Assegno il Css per adeguare il Blocco alla viewPort. e img */
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("roma.jpg");
+  background-size: cover;
+
+}
